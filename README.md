@@ -7,10 +7,11 @@ Follow the tips by the link:
 https://github.com/Robinwho/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md#optional-setup-gpu-for-mac
 
 After Docker is installed, launch a Docker container with the TensorFlow binary image as follows.
-$ docker run -it -p 8888:8888 gcr.io/tensorflow/tensorflow
+
+>$ docker run -it -p 8888:8888 gcr.io/tensorflow/tensorflow
 Actual behavior
 
-$ docker run -it -p 8888:8888 gcr.io/tensorflow/tensorflow
+>$ docker run -it -p 8888:8888 gcr.io/tensorflow/tensorflow
 Information
 
 GET THE ERRORS:
@@ -20,7 +21,7 @@ docker: Error response from daemon: Get https://gcr.io/v1/_ping: dial tcp 64.233
 See 'docker run --help'.
 Is this the problem of proxy? Coz when I run:
 
-ping google.com
+<ping google.com>
 Then printing the infos:
 
 PING google.com (172.217.24.14): 56 data bytes
