@@ -32,6 +32,8 @@ Request timeout for icmp_seq 3
 Having tried many ways, but doesn't work. 
 
 Finally with the help of these two [](links(http://blog.csdn.net/chenming_hnu/article/details/54600270) & ), the problem is fixed!
+The correct command:
+>sudo docker run -it -p 8888:8888 tensorflow/tensorflow
 
 ###Detail
 https://github.com/docker/for-mac/issues/1145
