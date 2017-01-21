@@ -25,9 +25,13 @@ See 'docker run --help'. And when running:
 >$ ping google.com
 
 PING google.com (172.217.24.14): 56 data bytes
+
 Request timeout for icmp_seq 0
+
 Request timeout for icmp_seq 1
+
 Request timeout for icmp_seq 2
+
 Request timeout for icmp_seq 3
 
 Having tried many ways, but doesn't work. 
