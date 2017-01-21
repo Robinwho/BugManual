@@ -9,20 +9,20 @@ https://github.com/Robinwho/tensorflow/blob/master/tensorflow/g3doc/get_started/
 After Docker is installed, launch a Docker container with the TensorFlow binary image as follows.
 
 >$ docker run -it -p 8888:8888 gcr.io/tensorflow/tensorflow
+
 Actual behavior
 
 >$ docker run -it -p 8888:8888 gcr.io/tensorflow/tensorflow
+
 Information
 
 GET THE ERRORS:
 
 Unable to find image 'gcr.io/tensorflow/tensorflow:latest' locally
 docker: Error response from daemon: Get https://gcr.io/v1/_ping: dial tcp 64.233.189.82:443: i/o timeout.
-See 'docker run --help'.
-Is this the problem of proxy? Coz when I run:
+See 'docker run --help'. And when running:
 
-<ping google.com>
-Then printing the infos:
+>$ ping google.com
 
 PING google.com (172.217.24.14): 56 data bytes
 Request timeout for icmp_seq 0
@@ -34,7 +34,7 @@ Having tried many ways, but doesn't work.
 
 Finally with the help of these two [](links(http://blog.csdn.net/chenming_hnu/article/details/54600270) & ), the problem is fixed!
 The correct command:
->sudo docker run -it -p 8888:8888 tensorflow/tensorflow
+>$ sudo docker run -it -p 8888:8888 tensorflow/tensorflow
 
 ###Detail
 https://github.com/docker/for-mac/issues/1145
