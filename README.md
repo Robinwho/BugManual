@@ -19,7 +19,7 @@ Information
 GET THE ERRORS:
 
 Unable to find image 'gcr.io/tensorflow/tensorflow:latest' locally
-docker: Error response from daemon: Get https://gcr.io/v1/_ping: dial tcp 64.233.189.82:443: i/o timeout.
+docker: Error response from daemon: Get https://gcr.io/v1/_ping: dial < tcp 64.233.189.82:443: i/o timeout.
 See 'docker run --help'. And when running:
 
 >$ ping google.com
