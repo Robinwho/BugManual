@@ -50,3 +50,4 @@ http://wiki.jikexueyuan.com/project/tensorflow-zh/get_started/basic_usage.html
 http://colah.github.io/posts/2014-10-Visualizing-MNIST/
 
 ###TO DO LIST
+####｛《｝
