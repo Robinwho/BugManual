@@ -1,6 +1,6 @@
 # BugBook
 Record the major bugs encountered in the projects. So easy to find & summary in the future.
-##BUG 1
+##BUG 1 [Tensorflow error: Docker on Mac]
 Expected behavior
 
 Follow the tips by the link:
