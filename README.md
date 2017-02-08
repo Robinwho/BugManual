@@ -49,5 +49,13 @@ http://wiki.jikexueyuan.com/project/tensorflow-zh/get_started/basic_usage.html
 ###Visualizing MNIST: An Exploration of Dimensionality Reduction
 http://colah.github.io/posts/2014-10-Visualizing-MNIST/
 
+#BUG2 easy_install command not found
+
+>$ sudo easy_install pip
+>Password:
+>sudo: easy_install: command not found
+
+Following this link(http://stackoverflow.com/questions/6012246/why-is-python-easy-install-not-working-on-my-mac), it can't work.
+
 ###TO DO LIST
 ####｛《｝
