@@ -58,12 +58,23 @@ http://colah.github.io/posts/2014-10-Visualizing-MNIST/
 Following this link(http://stackoverflow.com/questions/6012246/why-is-python-easy-install-not-working-on-my-mac), it can't work.
 
 ###Detail
-$ sudo find . -name "easy_install"
-Password:
-find: ./dev/fd/3: Not a directory
-find: ./dev/fd/4: Not a directory
-./usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/bin/easy_install
-./usr/local/Cellar/python/2.7.9/bin/easy_install
+>$ sudo find . -name "easy_install"
+>./usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/bin/easy_install
+
+Then,
+>$ sudo /usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/bin/easy_install pip
+
+Searching for pip
+Best match: pip 6.0.8
+Processing pip-6.0.8-py2.7.egg
+pip 6.0.8 is already the active version in easy-install.pth
+Installing pip script to /usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/bin
+Installing pip2.7 script to /usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/bin
+Installing pip2 script to /usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/bin
+
+Using /usr/local/lib/python2.7/site-packages/pip-6.0.8-py2.7.egg
+Processing dependencies for pip
+Finished processing dependencies for pip
 
 ###TO DO LIST
 ####｛《｝
