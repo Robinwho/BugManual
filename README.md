@@ -49,7 +49,7 @@ http://wiki.jikexueyuan.com/project/tensorflow-zh/get_started/basic_usage.html
 ###Visualizing MNIST: An Exploration of Dimensionality Reduction
 http://colah.github.io/posts/2014-10-Visualizing-MNIST/
 
-##BUG2 easy_install command not found
+##BUG2 [easy_install command not found]
 
 >$ sudo easy_install pip
 >Password:
