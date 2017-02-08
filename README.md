@@ -80,19 +80,28 @@ Finished processing dependencies for pip
 vim .bash_profile
 
   1 eval "$(pyenv init -)"
+  
   2 export ECLIPSE_HOME=/Applications/eclipse
-  3 
+   
   4 # Setting PATH for Python 3.5
+  
   5 # The original version is saved in .bash_profile.pysave
+  
   6 #PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+  
   7 PATH="/usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/bin/:${PATH}"
+  
   8 export PATH
-  9 
+   
  10 # Setting PATH for Python 3.5
+ 
  11 # The original version is saved in .bash_profile.pysave
+ 
  12 #PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+ 
  13 PATH="/usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/bin/:${PATH}"
+ 
  14 export PATH
-~                       
+                        
 ###TO DO LIST
 ####｛《｝
