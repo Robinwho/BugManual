@@ -108,5 +108,11 @@ e.g. On Mac:http://www.cnblogs.com/xingfuzzhd/archive/2013/11/04/3407166.html
 ###useful command:
 >sqlite> select * from sqlite_master where type="table";
 
+##BUG4 [Input URL: SyntaxError: invalid syntax]
+Using 'http://xxxx.xxx.xxx' instead of http://xxxx.xxx.xxx. See the difference?
+Or refer to this:http://stackoverflow.com/questions/2589309/command-line-input-causes-syntaxerror
+
+##BUG5 [TypeError: 'encoding' is an invalid keyword argument for this function]
+
 ###TO DO LIST
 ####｛《｝
