@@ -105,7 +105,8 @@ vim .bash_profile
                         
 ##BUG3 [Using Sqlite3]
 e.g. On Mac:http://www.cnblogs.com/xingfuzzhd/archive/2013/11/04/3407166.html
-
+###useful command:
+sqlite> select * from sqlite_master where type="table";
 
 ###TO DO LIST
 ####｛《｝
