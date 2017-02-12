@@ -103,5 +103,9 @@ vim .bash_profile
  
  14 export PATH
                         
+##BUG3 [Using Sqlite3]
+e.g. On Mac:http://www.cnblogs.com/xingfuzzhd/archive/2013/11/04/3407166.html
+
+
 ###TO DO LIST
 ####｛《｝
