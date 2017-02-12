@@ -113,6 +113,12 @@ Using 'http://xxxx.xxx.xxx' instead of http://xxxx.xxx.xxx. See the difference?
 Or refer to this:http://stackoverflow.com/questions/2589309/command-line-input-causes-syntaxerror
 
 ##BUG5 [TypeError: 'encoding' is an invalid keyword argument for this function]
+In Python 2, the open() function takes no encoding argument. The third argument is the buffering option instead.
+You appear to be confused with the Python 3 version. If so use io.open() instead:
+>import io
+>with io.open("file1.txt", "a", encoding="utf-8-sig") as f:
+In Python 3, the io.open() function replaced the version from Python 2.
 
+## BUG6 [while true try except]
 ###TO DO LIST
 ####｛《｝
