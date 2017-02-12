@@ -43,7 +43,7 @@ The correct command:
 ###Detail
 https://github.com/docker/for-mac/issues/1145
 
-##TF官方文档中文版
+###TF官方文档中文版
 http://wiki.jikexueyuan.com/project/tensorflow-zh/get_started/basic_usage.html
 
 ###Visualizing MNIST: An Exploration of Dimensionality Reduction
