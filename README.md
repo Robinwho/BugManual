@@ -119,6 +119,24 @@ You appear to be confused with the Python 3 version. If so use io.open() instead
 >with io.open("file1.txt", "a", encoding="utf-8-sig") as f:
 In Python 3, the io.open() function replaced the version from Python 2.
 
+## BUG6 [bs4.FeatureNotFound]
+bs4.FeatureNotFound: Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?
+
+###REASON:
+You'll notice that in the BS4 documentation page above, they point out that by default BS4 will use the Python built-in HTML parser. Assuming you are in OSX, the Apple-bundled version of Python is 2.7.2 which is not lenient for character formatting.
+
+###SOLUTION:
+>sudo pip install lxml
+If there is:
+||In file included from src/lxml/lxml.etree.c:515:
+    
+    src/lxml/includes/etree_defs.h:14:10: fatal error: 'libxml/xmlversion.h' file not found
+    #include "libxml/xmlversion.h"
+             ^
+    1 error generated.
+To fix it(For Mac with XCODE):
+>export >C_INCLUDE_PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/libxml2:$C>_INCLUDE_PATH
+
 ## BUG6 [while true try except]
 ###TO DO LIST
 ####｛《｝
