@@ -136,6 +136,12 @@ If there is:
     1 error generated.
 To fix it(For Mac with XCODE):
 >export >C_INCLUDE_PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/libxml2:$C>_INCLUDE_PATH
+说明：MAC上的坑真不少。折腾半天，终于搞定。简要总结如下。
+首先，打开MAC的root账户：https://support.apple.com/en-in/HT204012
+其次，brew install libxml2安装libxml2
+接着，进入root用户操作（su）。
+（1）配置环境变量：如，export C_INCLUDE_PATH=/usr/local/Cellar/libxml2/2.9.4_2/include/libxml2:$C_INCLUDE_PATH。其中版本号每个系统不一，需进入Cellar目录查看。
+（2）使用 pip install lxml安装。成功完成。
 
 ## BUG6 [while true try except]
 ###TO DO LIST
