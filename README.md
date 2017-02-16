@@ -143,6 +143,16 @@ To fix it(For Mac with XCODE):
 接着，进入root用户操作（su）。
 （1）配置环境变量：如，export C_INCLUDE_PATH=/usr/local/Cellar/libxml2/2.9.4_2/include/libxml2:$C_INCLUDE_PATH。其中版本号每个系统不一，需进入Cellar目录查看。
 （2）使用 pip install lxml安装。成功完成。
+## BUG6 [>pip install scrapy & pip install --upgrade setuptools]
+###Problem:
+distutils.errors.DistutilsPlatformError: Microsoft Visual C++ 9.0 is require
+d. Get it from http://aka.ms/vcpython27
+    ----------------------------------------
+Command "python setup.py egg_info" failed with error code 1 in c:\users\hp430\ap
+pdata\local\temp\pip-build-f17bsa\cffi
+
+###SOLUTION:
+http://aka.ms/vcpython27
 
 ## BUG6 [while true try except]
 ###TO DO LIST
