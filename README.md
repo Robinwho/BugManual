@@ -154,6 +154,8 @@ pdata\local\temp\pip-build-f17bsa\cffi
 ###SOLUTION:
 http://aka.ms/vcpython27
 
+>>pip install scrapy
+
 ## BUG6 [while true try except]
 ###TO DO LIST
 ####｛《｝
