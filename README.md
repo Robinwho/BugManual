@@ -151,11 +151,20 @@ d. Get it from http://aka.ms/vcpython27
 Command "python setup.py egg_info" failed with error code 1 in c:\users\hp430\ap
 pdata\local\temp\pip-build-f17bsa\cffi
 
-###SOLUTION:
+###SOLUTION1:
 http://aka.ms/vcpython27
-
+Then
 >>pip install scrapy
+|error: command 'C:\\Users\\HP430\\AppData\\Local\\Programs\\Common\\Microsoft\\Visual C++ for Python\\9.0\\VC\\Bin\\cl.exe' failed with exit status 2
+    ----------------------------------------
+|Command "c:\python27\python.exe -c "import setuptools, tokenize;__file__='c:\\users\\hp430\\appdata\\local\\temp\\pip-build-dugrv2\\cryptography\\setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record c:\users\hp430\appdata\local\temp\pip-8ihq2x-record\install-record.txt --single-version-externally-managed --compile" failed with error code 1 in c:\users\hp430\appdata\local\temp\pip-build-dugrv2\cryptography
 
-## BUG6 [while true try except]
+###SOLUTION2:
+https://cryptography.io/en/latest/installation/#on-windows
+
+## BIG BUG [pip version need to be up-to-date]
+You are using pip version 7.1.2, however version 9.0.1 is available.
+You should consider upgrading via the 'python -m pip install --upgrade pip' comm
+and.
 ###TO DO LIST
 ####｛《｝
