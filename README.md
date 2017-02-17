@@ -78,7 +78,7 @@ Finished processing dependencies for pip
 ###Exa: [python2.7 & 3.5 path configuration]
 vim .bash_profile
 
-<pre><code>
+<code>
   eval "$(pyenv init -)"
   export ECLIPSE_HOME=/Applications/eclipse
   # Setting PATH for Python 3.5
@@ -91,10 +91,12 @@ vim .bash_profile
  #PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}" 
  PATH="/usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/bin/:${PATH}" 
  export PATH
-</code></pre>
+</code>
+
 -------------------------------------
 PART
 -------------------------------------
+
 ##BUG3 [Using Sqlite3]
 e.g. On Mac:http://www.cnblogs.com/xingfuzzhd/archive/2013/11/04/3407166.html
 ###useful command:
