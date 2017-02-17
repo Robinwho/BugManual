@@ -29,13 +29,7 @@ See 'docker run --help'. And when running:
 
 PING google.com (172.217.24.14): 56 data bytes
 
-Request timeout for icmp_seq 0
-
-Request timeout for icmp_seq 1
-
-Request timeout for icmp_seq 2
-
-Request timeout for icmp_seq 3
+Request timeout for icmp_seq 0 ...3
 
 Having tried many ways, but doesn't work. 
 
@@ -98,7 +92,9 @@ vim .bash_profile
  PATH="/usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/bin/:${PATH}" 
  export PATH
 </code></pre>
-
+-------------------------------------
+PART
+-------------------------------------
 ##BUG3 [Using Sqlite3]
 e.g. On Mac:http://www.cnblogs.com/xingfuzzhd/archive/2013/11/04/3407166.html
 ###useful command:
