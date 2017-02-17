@@ -1,7 +1,8 @@
 # BugBook
 Record the major bugs encountered in the projects. So easy to find & summary in the future.
 ##BUG 1 [Tensorflow error: Docker on Mac]
-1.Expected behavior
+* 1
+Expected behavior
 
 Follow the tips by the link:
 https://github.com/Robinwho/tensorflow/blob/master/tensorflow/g3doc/get_started/os_setup.md#optional-setup-gpu-for-mac
@@ -10,11 +11,13 @@ After Docker is installed, launch a Docker container with the TensorFlow binary 
 
 >$ docker run -it -p 8888:8888 gcr.io/tensorflow/tensorflow
 
-2.Actual behavior
+* 2
+Actual behavior
 
 >$ docker run -it -p 8888:8888 gcr.io/tensorflow/tensorflow
 
-3.Information
+* 3
+Information
 
 GET THE ERRORS:
 
@@ -36,7 +39,9 @@ Request timeout for icmp_seq 3
 
 Having tried many ways, but doesn't work. 
 
-4.Finally with the help of these two [](links(http://blog.csdn.net/chenming_hnu/article/details/54600270) & ), the problem is fixed!
+* 4
+Finally with the help of follow link:
+(http://blog.csdn.net/chenming_hnu/article/details/54600270), the problem is fixed!
 The correct command:
 >$ sudo docker run -it -p 8888:8888 tensorflow/tensorflow
 
@@ -78,6 +83,7 @@ Finished processing dependencies for pip
 
 ###Exa: [python2.7 & 3.5 path configuration]
 vim .bash_profile
+<pre>
 <code>
   1 eval "$(pyenv init -)"
   
@@ -103,6 +109,7 @@ vim .bash_profile
  
  14 export PATH
  </code>
+ </pre>
                         
 ##BUG3 [Using Sqlite3]
 e.g. On Mac:http://www.cnblogs.com/xingfuzzhd/archive/2013/11/04/3407166.html
@@ -111,6 +118,7 @@ e.g. On Mac:http://www.cnblogs.com/xingfuzzhd/archive/2013/11/04/3407166.html
 
 ##BUG4 [Input URL: SyntaxError: invalid syntax]
 Using 'http://xxxx.xxx.xxx' instead of http://xxxx.xxx.xxx. See the difference?
+
 Or refer to this:http://stackoverflow.com/questions/2589309/command-line-input-causes-syntaxerror
 
 ##BUG5 [TypeError: 'encoding' is an invalid keyword argument for this function]
@@ -138,12 +146,14 @@ If there is:
 To fix it(For Mac with XCODE):
 >export >C_INCLUDE_PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/libxml2:$C>_INCLUDE_PATH
 
-\说明：MAC上的坑真不少。折腾半天，终于搞定。简要总结如下。
+<pre>说明：MAC上的坑真不少。折腾半天，终于搞定。简要总结如下。
 -首先，打开MAC的root账户：https://support.apple.com/en-in/HT204012
 -其次，brew install libxml2安装libxml2
 -接着，进入root用户操作（su）。
 *（1）配置环境变量：如，export C_INCLUDE_PATH=/usr/local/Cellar/libxml2/2.9.4_2/include/libxml2:$C_INCLUDE_PATH。其中版本号每个系统不一，需进入Cellar目录查看。
 （2）使用 pip install lxml安装。成功完成。
+</pre>
+
 ## BUG6 [>pip install scrapy & pip install --upgrade setuptools]
 ###Problem:
 distutils.errors.DistutilsPlatformError: Microsoft Visual C++ 9.0 is require
@@ -158,7 +168,9 @@ Then
 >>pip install scrapy
 |error: command 'C:\\Users\\HP430\\AppData\\Local\\Programs\\Common\\Microsoft\\Visual C++ for Python\\9.0\\VC\\Bin\\cl.exe' failed with exit status 2
     ----------------------------------------
+    <pre>
 *Command "c:\python27\python.exe -c "import setuptools, tokenize;__file__='c:\\users\\hp430\\appdata\\local\\temp\\pip-build-*dugrv2\\cryptography\\setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" *install --record c:\users\hp430\appdata\local\temp\pip-8ihq2x-record\install-record.txt --single-version-externally-managed --compile" *failed with error code 1 in c:\users\hp430\appdata\local\temp\pip-build-dugrv2\cryptography
+</pre>
 
 ###SOLUTION2:
 https://cryptography.io/en/latest/installation/#on-windows
