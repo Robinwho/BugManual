@@ -110,18 +110,19 @@ vim .bash_profile
  14 export PATH
  </code>
  </pre>
-                        
-##BUG3 [Using Sqlite3]
+
+
+## BUG3 [Using Sqlite3]
 e.g. On Mac:http://www.cnblogs.com/xingfuzzhd/archive/2013/11/04/3407166.html
 ###useful command:
 >sqlite> select * from sqlite_master where type="table";
 
-##BUG4 [Input URL: SyntaxError: invalid syntax]
+## BUG4 [Input URL: SyntaxError: invalid syntax]
 Using 'http://xxxx.xxx.xxx' instead of http://xxxx.xxx.xxx. See the difference?
 
 Or refer to this:http://stackoverflow.com/questions/2589309/command-line-input-causes-syntaxerror
 
-##BUG5 [TypeError: 'encoding' is an invalid keyword argument for this function]
+## BUG5 [TypeError: 'encoding' is an invalid keyword argument for this function]
 In Python 2, the open() function takes no encoding argument. The third argument is the buffering option instead.
 You appear to be confused with the Python 3 version. If so use io.open() instead:
 >import io
@@ -146,13 +147,16 @@ If there is:
 To fix it(For Mac with XCODE):
 >export >C_INCLUDE_PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/include/libxml2:$C>_INCLUDE_PATH
 
+
 <pre>说明：MAC上的坑真不少。折腾半天，终于搞定。简要总结如下。
 -首先，打开MAC的root账户：https://support.apple.com/en-in/HT204012
 -其次，brew install libxml2安装libxml2
 -接着，进入root用户操作（su）。
-*（1）配置环境变量：如，export C_INCLUDE_PATH=/usr/local/Cellar/libxml2/2.9.4_2/include/libxml2:$C_INCLUDE_PATH。其中版本号每个系统不一，需进入Cellar目录查看。
+*（1）配置环境变量：如，export C_INCLUDE_PATH=/usr/local/Cellar/libxml2/2.9.4_2/include/libxml2:$C_INCLUDE_PATH。
+其中版本号每个系统不一，需进入Cellar目录查看。
 （2）使用 pip install lxml安装。成功完成。
 </pre>
+
 
 ## BUG6 [>pip install scrapy & pip install --upgrade setuptools]
 ###Problem:
@@ -169,7 +173,7 @@ Then
 |error: command 'C:\\Users\\HP430\\AppData\\Local\\Programs\\Common\\Microsoft\\Visual C++ for Python\\9.0\\VC\\Bin\\cl.exe' failed with exit status 2
     ----------------------------------------
     <pre>
-*Command "c:\python27\python.exe -c "import setuptools, tokenize;__file__='c:\\users\\hp430\\appdata\\local\\temp\\pip-build-*dugrv2\\cryptography\\setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" *install --record c:\users\hp430\appdata\local\temp\pip-8ihq2x-record\install-record.txt --single-version-externally-managed --compile" *failed with error code 1 in c:\users\hp430\appdata\local\temp\pip-build-dugrv2\cryptography
+Command "c:\python27\python.exe -c "import setuptools, tokenize;__file__='c:\\users\\hp430\\appdata\\local\\temp\\pip-build-dugrv2\\cryptography\\setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record c:\users\hp430\appdata\local\temp\pip-8ihq2x-record\install-record.txt --single-version-externally-managed --compile" failed with error code 1 in c:\users\hp430\appdata\local\temp\pip-build-dugrv2\cryptography
 </pre>
 
 ###SOLUTION2:
