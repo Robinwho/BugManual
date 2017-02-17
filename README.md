@@ -93,9 +93,7 @@ vim .bash_profile
  export PATH
 </code>
 
--------------------------------------
-PART
--------------------------------------
+-------------------------------
 
 ##BUG3 [Using Sqlite3]
 e.g. On Mac:http://www.cnblogs.com/xingfuzzhd/archive/2013/11/04/3407166.html
@@ -145,7 +143,7 @@ To fix it(For Mac with XCODE):
 </pre>
 
 
-## BUG6 [>pip install scrapy & pip install --upgrade setuptools]
+## BUG7 [pip install scrapy & pip install --upgrade setuptools]
 ###Problem:
 distutils.errors.DistutilsPlatformError: Microsoft Visual C++ 9.0 is require
 d. Get it from http://aka.ms/vcpython27
