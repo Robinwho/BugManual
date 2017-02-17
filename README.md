@@ -238,9 +238,9 @@ and.
 
 ##REF LINKS
 * 1
-![安装python爬虫scrapy踩过的那些坑和编程外的思考](http://www.cnblogs.com/rwxwsblog/p/4557123.html)
+[安装python爬虫scrapy踩过的那些坑和编程外的思考](http://www.cnblogs.com/rwxwsblog/p/4557123.html)
 * 2
-![安装Scrapy掉进的坑](http://www.tokyjiao.com/archives/214)
+[安装Scrapy掉进的坑](http://www.tokyjiao.com/archives/214)
 
 ###TO DO LIST
 ####｛《｝
