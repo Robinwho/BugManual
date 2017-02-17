@@ -161,6 +161,7 @@ Then
 
 ###SOLUTION2:
 https://cryptography.io/en/latest/installation/#on-windows
+
 ## BUG7 [libxml2]
     Building lxml version 3.7.2.
     Building without Cython.
@@ -173,9 +174,9 @@ Install "pywin32-220.win32-py2.7.exe" on Win7:
 >>python version 2.7 required which was not found in the registry
 ###SOLUTION1:
 
->>>python register.py
+>>python register.py
 
-<code>
+<pre><code>
 #
 # script to register Python 2.0 or later for use with win32all
 # and other extensions that require Python registry settings
@@ -227,7 +228,8 @@ def RegisterPy():
  
 if __name__ == "__main__":
     RegisterPy()
-</code>
+</code></pre>
+
 ## BIG BUG [pip version need to be up-to-date]
 You are using pip version 7.1.2, however version 9.0.1 is available.
 You should consider upgrading via the 'python -m pip install --upgrade pip' comm
