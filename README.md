@@ -235,5 +235,12 @@ if __name__ == "__main__":
 You are using pip version 7.1.2, however version 9.0.1 is available.
 You should consider upgrading via the 'python -m pip install --upgrade pip' comm
 and.
+
+##REF LINKS
+* 1
+![安装python爬虫scrapy踩过的那些坑和编程外的思考](http://www.cnblogs.com/rwxwsblog/p/4557123.html)
+* 2
+![安装Scrapy掉进的坑](http://www.tokyjiao.com/archives/214)
+
 ###TO DO LIST
 ####｛《｝
