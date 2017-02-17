@@ -161,7 +161,14 @@ Then
 
 ###SOLUTION2:
 https://cryptography.io/en/latest/installation/#on-windows
+## BUG7 [libxml2]
+    Building lxml version 3.7.2.
+    Building without Cython.
+    ERROR: 'xslt-config' 不是内部或外部命令，也不是可运行的程序
+    或批处理文件。
 
+    ** make sure the development packages of libxml2 and libxslt are installed *
+*
 ## BIG BUG [pip version need to be up-to-date]
 You are using pip version 7.1.2, however version 9.0.1 is available.
 You should consider upgrading via the 'python -m pip install --upgrade pip' comm
