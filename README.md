@@ -83,31 +83,21 @@ Finished processing dependencies for pip
 
 ###Exa: [python2.7 & 3.5 path configuration]
 vim .bash_profile
+
 <pre><code>
-  1 eval "$(pyenv init -)"
-  
-  2 export ECLIPSE_HOME=/Applications/eclipse
-   
-  4 # Setting PATH for Python 3.5
-  
-  5 # The original version is saved in .bash_profile.pysave
-  
-  6 #PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
-  
-  7 PATH="/usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/bin/:${PATH}"
-  
-  8 export PATH
-   
- 10 # Setting PATH for Python 3.5
- 
- 11 # The original version is saved in .bash_profile.pysave
- 
- 12 #PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
- 
- 13 PATH="/usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/bin/:${PATH}"
- 
- 14 export PATH
- </code></pre>
+  eval "$(pyenv init -)"
+  export ECLIPSE_HOME=/Applications/eclipse
+  # Setting PATH for Python 3.5
+  # The original version is saved in .bash_profile.pysave
+  #PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"  
+  PATH="/usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/bin/:${PATH}"  
+  export PATH   
+ # Setting PATH for Python 3.5 
+ # The original version is saved in .bash_profile.pysave 
+ #PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}" 
+ PATH="/usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/bin/:${PATH}" 
+ export PATH
+</code></pre>
 
 ##BUG3 [Using Sqlite3]
 e.g. On Mac:http://www.cnblogs.com/xingfuzzhd/archive/2013/11/04/3407166.html
@@ -168,8 +158,8 @@ pdata\local\temp\pip-build-f17bsa\cffi
 ###SOLUTION1:
 http://aka.ms/vcpython27
 Then
->>pip install scrapy
-|error: command 'C:\\Users\\HP430\\AppData\\Local\\Programs\\Common\\Microsoft\\Visual C++ for Python\\9.0\\VC\\Bin\\cl.exe' failed with exit status 2
+>pip install scrapy
+error: command 'C:\\Users\\HP430\\AppData\\Local\\Programs\\Common\\Microsoft\\Visual C++ for Python\\9.0\\VC\\Bin\\cl.exe' failed with exit status 2
     ----------------------------------------
 <pre><code>
 Command "c:\python27\python.exe -c "import setuptools, tokenize;__file__='c:\\users\\hp430\\appdata\\local\\temp\\pip-build-dugrv2\\cryptography\\setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record c:\users\hp430\appdata\local\temp\pip-8ihq2x-record\install-record.txt --single-version-externally-managed --compile" failed with error code 1 in c:\users\hp430\appdata\local\temp\pip-build-dugrv2\cryptography
