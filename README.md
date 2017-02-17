@@ -112,24 +112,27 @@ vim .bash_profile
  </pre>
 
 
-## BUG3 [Using Sqlite3]
+
+##BUG3 [Using Sqlite3]
 e.g. On Mac:http://www.cnblogs.com/xingfuzzhd/archive/2013/11/04/3407166.html
 ###useful command:
 >sqlite> select * from sqlite_master where type="table";
 
-## BUG4 [Input URL: SyntaxError: invalid syntax]
+
+##BUG4 [Input URL: SyntaxError: invalid syntax]
 Using 'http://xxxx.xxx.xxx' instead of http://xxxx.xxx.xxx. See the difference?
 
 Or refer to this:http://stackoverflow.com/questions/2589309/command-line-input-causes-syntaxerror
 
-## BUG5 [TypeError: 'encoding' is an invalid keyword argument for this function]
+
+##BUG5 [TypeError: 'encoding' is an invalid keyword argument for this function]
 In Python 2, the open() function takes no encoding argument. The third argument is the buffering option instead.
 You appear to be confused with the Python 3 version. If so use io.open() instead:
 >import io
 >with io.open("file1.txt", "a", encoding="utf-8-sig") as f:
 In Python 3, the io.open() function replaced the version from Python 2.
 
-## BUG6 [bs4.FeatureNotFound]
+##BUG6 [bs4.FeatureNotFound]
 bs4.FeatureNotFound: Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?
 
 ###REASON:
