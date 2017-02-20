@@ -242,6 +242,9 @@ and.
 [安装python爬虫scrapy踩过的那些坑和编程外的思考](http://www.cnblogs.com/rwxwsblog/p/4557123.html)
 * 2
 [安装Scrapy掉进的坑](http://www.tokyjiao.com/archives/214)
-
+<pre>
+说明：在MACOS10.10+中，安装Scrapy已无问题。只需使用pip install scrapy命令即可自动安装所有必须文件。包括以下。
+Successfully installed Automat-0.5.0 PyDispatcher-2.0.5 Twisted-17.1.0 attrs-16.3.0 cffi-1.9.1 constantly-15.1.0 cryptography-1.7.2 cssselect-1.0.1 enum34-1.1.6 idna-2.2 incremental-16.10.1 ipaddress-1.0.18 parsel-1.1.0 pyOpenSSL-16.2.0 pyasn1-0.2.2 pyasn1-modules-0.0.8 pycparser-2.17 queuelib-1.4.2 scrapy-1.3.2 service-identity-16.0.0 six-1.10.0 w3lib-1.17.0 zope.interface-4.3.3
+</pre>
 ####TO DO LIST
 ####｛《｝
