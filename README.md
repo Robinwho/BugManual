@@ -39,13 +39,13 @@ Finally with the help of follow link:
 The correct command:
 >$ sudo docker run -it -p 8888:8888 tensorflow/tensorflow
 
-###Detail
+####Detail
 https://github.com/docker/for-mac/issues/1145
 
-###TF官方文档中文版
+####TF官方文档中文版
 http://wiki.jikexueyuan.com/project/tensorflow-zh/get_started/basic_usage.html
 
-###Visualizing MNIST: An Exploration of Dimensionality Reduction
+####Visualizing MNIST: An Exploration of Dimensionality Reduction
 http://colah.github.io/posts/2014-10-Visualizing-MNIST/
 
 ##BUG2 [easy_install command not found]
@@ -56,7 +56,7 @@ http://colah.github.io/posts/2014-10-Visualizing-MNIST/
 
 Following this link(http://stackoverflow.com/questions/6012246/why-is-python-easy-install-not-working-on-my-mac), it can't work.
 
-###Detail
+####Detail
 >$ sudo find . -name "easy_install"
 >./usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/bin/easy_install
 
@@ -75,7 +75,7 @@ Using /usr/local/lib/python2.7/site-packages/pip-6.0.8-py2.7.egg
 Processing dependencies for pip
 Finished processing dependencies for pip
 
-###Exa: [python2.7 & 3.5 path configuration]
+####Exa: [python2.7 & 3.5 path configuration]
 vim .bash_profile
 
 <code>
@@ -117,10 +117,10 @@ In Python 3, the io.open() function replaced the version from Python 2.
 ##BUG6 [bs4.FeatureNotFound]
 bs4.FeatureNotFound: Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?
 
-###REASON:
+####REASON:
 You'll notice that in the BS4 documentation page above, they point out that by default BS4 will use the Python built-in HTML parser. Assuming you are in OSX, the Apple-bundled version of Python is 2.7.2 which is not lenient for character formatting.
 
-###SOLUTION:
+####SOLUTION:
 >sudo pip install lxml
 If there is:
 ||In file included from src/lxml/lxml.etree.c:515:
@@ -151,7 +151,7 @@ d. Get it from http://aka.ms/vcpython27
 Command "python setup.py egg_info" failed with error code 1 in c:\users\hp430\ap
 pdata\local\temp\pip-build-f17bsa\cffi
 
-###SOLUTION1:
+####SOLUTION1:
 http://aka.ms/vcpython27
 Then
 >pip install scrapy
@@ -161,10 +161,10 @@ error: command 'C:\\Users\\HP430\\AppData\\Local\\Programs\\Common\\Microsoft\\V
 Command "c:\python27\python.exe -c "import setuptools, tokenize;__file__='c:\\users\\hp430\\appdata\\local\\temp\\pip-build-dugrv2\\cryptography\\setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record c:\users\hp430\appdata\local\temp\pip-8ihq2x-record\install-record.txt --single-version-externally-managed --compile" failed with error code 1 in c:\users\hp430\appdata\local\temp\pip-build-dugrv2\cryptography
 </code></pre>
 
-###SOLUTION2:
+####SOLUTION2:
 https://cryptography.io/en/latest/installation/#on-windows
 
-## BUG7 [libxml2]
+## BUG8 [libxml2]
     Building lxml version 3.7.2.
     Building without Cython.
     ERROR: 'xslt-config' 不是内部或外部命令，也不是可运行的程序
@@ -237,11 +237,11 @@ You are using pip version 7.1.2, however version 9.0.1 is available.
 You should consider upgrading via the 'python -m pip install --upgrade pip' comm
 and.
 
-##REF LINKS
+###REF LINKS
 * 1
 [安装python爬虫scrapy踩过的那些坑和编程外的思考](http://www.cnblogs.com/rwxwsblog/p/4557123.html)
 * 2
 [安装Scrapy掉进的坑](http://www.tokyjiao.com/archives/214)
 
-###TO DO LIST
+####TO DO LIST
 ####｛《｝
