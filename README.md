@@ -247,4 +247,44 @@ and.
 Successfully installed Automat-0.5.0 PyDispatcher-2.0.5 Twisted-17.1.0 attrs-16.3.0 cffi-1.9.1 constantly-15.1.0 cryptography-1.7.2 cssselect-1.0.1 enum34-1.1.6 idna-2.2 incremental-16.10.1 ipaddress-1.0.18 parsel-1.1.0 pyOpenSSL-16.2.0 pyasn1-0.2.2 pyasn1-modules-0.0.8 pycparser-2.17 queuelib-1.4.2 scrapy-1.3.2 service-identity-16.0.0 six-1.10.0 w3lib-1.17.0 zope.interface-4.3.3
 </pre>
 ####TO DO LIST
+<pre>
+-bash: run.py: command not found
+localhost:LianJia robin$ python run.py 
+/usr/local/lib/python2.7/site-packages/scrapy/spiderloader.py:37: RuntimeWarning: 
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/site-packages/scrapy/spiderloader.py", line 31, in _load_all_spiders
+    for module in walk_modules(name):
+  File "/usr/local/lib/python2.7/site-packages/scrapy/utils/misc.py", line 71, in walk_modules
+    submod = import_module(fullpath)
+  File "/usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/robin/git/Crawler/LianJia/LianJia/spiders/lianjia.py", line 8, in <module>
+    from scrapy_redis.spiders import RedisSpider
+ImportError: No module named scrapy_redis.spiders
+Could not load spiders from module 'LianJia.spiders'. Check SPIDER_MODULES setting
+  warnings.warn(msg, RuntimeWarning)
+2017-02-20 22:06:24 [scrapy.utils.log] INFO: Scrapy 1.3.2 started (bot: LianJia)
+2017-02-20 22:06:24 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'LianJia.spiders', 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'SPIDER_MODULES': ['LianJia.spiders'], 'BOT_NAME': 'LianJia', 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'DOWNLOAD_DELAY': 3}
+Traceback (most recent call last):
+  File "run.py", line 2, in <module>
+    cmdline.execute("scrapy crawl lianjiaspider".split())
+  File "/usr/local/lib/python2.7/site-packages/scrapy/cmdline.py", line 142, in execute
+    _run_print_help(parser, _run_command, cmd, args, opts)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/cmdline.py", line 88, in _run_print_help
+    func(*a, **kw)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/cmdline.py", line 149, in _run_command
+    cmd.run(args, opts)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/commands/crawl.py", line 57, in run
+    self.crawler_process.crawl(spname, **opts.spargs)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/crawler.py", line 162, in crawl
+    crawler = self.create_crawler(crawler_or_spidercls)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/crawler.py", line 190, in create_crawler
+    return self._create_crawler(crawler_or_spidercls)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/crawler.py", line 194, in _create_crawler
+    spidercls = self.spider_loader.load(spidercls)
+  File "/usr/local/lib/python2.7/site-packages/scrapy/spiderloader.py", line 51, in load
+    raise KeyError("Spider not found: {}".format(spider_name))
+KeyError: 'Spider not found: lianjiaspider'
+https://github.com/HunterChao/Crawler
+</pre>
 ####｛《｝
