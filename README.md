@@ -232,8 +232,10 @@ if __name__ == "__main__":
     RegisterPy()
 </code></pre>
 ------------------------------------------------------
+<pre>补充说明</pre>
 
-##BIG BUG [pip version need to be up-to-date]
+##BIG BUG 
+[pip version need to be up-to-date]
 
 You are using pip version 7.1.2, however version 9.0.1 is available.
 You should consider upgrading via the 'python -m pip install --upgrade pip' comm
@@ -268,7 +270,7 @@ Could not load spiders from module 'LianJia.spiders'. Check SPIDER_MODULES setti
 2017-02-20 22:06:24 [scrapy.utils.log] INFO: Scrapy 1.3.2 started (bot: LianJia)
 2017-02-20 22:06:24 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'LianJia.spiders', 'DUPEFILTER_CLASS': 'scrapy_redis.dupefilter.RFPDupeFilter', 'SPIDER_MODULES': ['LianJia.spiders'], 'BOT_NAME': 'LianJia', 'SCHEDULER': 'scrapy_redis.scheduler.Scheduler', 'DOWNLOAD_DELAY': 3}
 Traceback (most recent call last):
-  File "run.py", line 2, in <module>
+  File "run.py", line 2, in
     cmdline.execute("scrapy crawl lianjiaspider".split())
   File "/usr/local/lib/python2.7/site-packages/scrapy/cmdline.py", line 142, in execute
     _run_print_help(parser, _run_command, cmd, args, opts)
