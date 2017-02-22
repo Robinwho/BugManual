@@ -232,7 +232,9 @@ if __name__ == "__main__":
     RegisterPy()
 </code></pre>
 
-## BIG BUG [pip version need to be up-to-date]
+
+##BIG BUG [pip version need to be up-to-date]
+
 You are using pip version 7.1.2, however version 9.0.1 is available.
 You should consider upgrading via the 'python -m pip install --upgrade pip' comm
 and.
