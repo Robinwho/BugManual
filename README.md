@@ -293,4 +293,14 @@ Traceback (most recent call last):
 KeyError: 'Spider not found: lianjiaspider'
 https://github.com/HunterChao/Crawler
 </pre>
+
+##BUG XX [ImportError: No module named scrapy_redis.spiders]
+[相关错误解决](http://blog.csdn.net/pipisorry/article/details/45190851)
+scrapy ImportError: No module named settings
+原因：爬虫根目录下不能有__init__文件，用startproject命令创建的目录是没有这个的，如果手动创建可能会创建相关文件
+解决：将__init__文件移除就OK了
+
+[ImportError: No module named spiders](https://github.com/scrapy/scrapy/issues/1859)
+[ImportError: No module named 'spiders'](http://stackoverflow.com/questions/41028605/importerror-no-module-named-spiders)
+
 ####｛《｝
