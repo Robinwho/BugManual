@@ -162,7 +162,10 @@ Command "c:\python27\python.exe -c "import setuptools, tokenize;__file__='c:\\us
 </code></pre>
 
 ####SOLUTION2:
-https://cryptography.io/en/latest/installation/#on-windows
+[How to install scrapy](https://cryptography.io/en/latest/installation/#on-windows)
+
+>For Python3:
+>pip3 install scrapy
 
 ## BUG8 [libxml2]
     Building lxml version 3.7.2.
