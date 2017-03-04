@@ -308,4 +308,10 @@ scrapy ImportError: No module named settings
 [ImportError: No module named 'spiders'](http://stackoverflow.com/questions/41028605/importerror-no-module-named-spiders)
 
 对于Python3,如仍报错[ImportError: No module named 'scrapy_redis']，则执行pip3 install scrapy_redis解决。
-####｛《｝
+
+##BUG 10 [redis.exceptions.ConnectionError: Error 61]
+connecting to localhost:6379. Connection refused.
+Although installing scrapy and redis by: pip install scrapy_redis, 'Error 61' does still happen..
+The reason is that the redis server didn't work normally, refer to:[Check the redis server](http://stackoverflow.com/questions/4670049/rescue-connection-refused-unable-to-connect-to-redis-on-localhost6379)
+So we should install redis by Homebrew[installing-redis-on-mac-os-x](http://jasdeep.ca/2012/05/installing-redis-on-mac-os-x/).
+Then it works! Enjoy!
