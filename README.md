@@ -324,6 +324,6 @@ Then it works! Enjoy!
 2017-03-13 21:48:59 [scrapy.core.engine] INFO: Spider opened
 2017-03-13 21:49:00 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
 2017-03-13 21:49:00 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
-2017-03-13 21:49:00 [scrapy_redis.dupefilter] DEBUG: Filtered duplicate request <GET http://bj.lianjia.com/ershoufang/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2017-03-13 21:49:00 [scrapy_redis.dupefilter] DEBUG: Filtered duplicate request < http://bj.lianjia.com/ershoufang/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
 2017-03-13 21:50:00 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
 </pre>
