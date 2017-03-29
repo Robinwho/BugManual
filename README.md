@@ -320,11 +320,11 @@ Then it works! Enjoy!
 [REF](http://blog.csdn.net/quuqu/article/details/52733139)
 
 ##BUG 12 [Gradle sync failed: Plugin with id 'com.android.application' not found.]
-SOLUTION:[Error:(1, 0) Plugin with id 'com.android.application' not found](http://stackoverflow.com/questions/24795079/error1-0-plugin-with-id-com-android-application-not-found)
+-SOLUTION:[Error:(1, 0) Plugin with id 'com.android.application' not found](http://stackoverflow.com/questions/24795079/error1-0-plugin-with-id-com-android-application-not-found)
 
 ##BUG 13 [Gradle sync failed: Minimum supported Gradle version is 3.3. Current version is 2.14.1]
  If using the gradle wrapper, try editing the distributionUrl in ...\gradle\wrapper\gradle-wrapper.properties to gradle-3.3-all.zip
-SOLUTION:[“Minimum supported Gradle version is 2.14.1. Current version is 2.10.” error](http://stackoverflow.com/questions/39164225/minimum-supported-gradle-version-is-2-14-1-current-version-is-2-10-error) 
+-SOLUTION:[“Minimum supported Gradle version is 2.14.1. Current version is 2.10.” error](http://stackoverflow.com/questions/39164225/minimum-supported-gradle-version-is-2-14-1-current-version-is-2-10-error) 
 
 #####TODO LIST
 ELK/
