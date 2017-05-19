@@ -326,6 +326,13 @@ Then it works! Enjoy!
  If using the gradle wrapper, try editing the distributionUrl in ...\gradle\wrapper\gradle-wrapper.properties to gradle-3.3-all.zip
 -SOLUTION:[“Minimum supported Gradle version is 2.14.1. Current version is 2.10.” error](http://stackoverflow.com/questions/39164225/minimum-supported-gradle-version-is-2-14-1-current-version-is-2-10-error) 
 
+##BUG 14 [Electron INSTALL & USE]
+throw new Error('Electron failed to install correctly, please delete node_modules/electron and try installing again')
+Try
+
+npm install electron --verbose
+It should output a progress bar for the download
+
 #####TODO LIST
 ELK/
 <pre>
