@@ -298,7 +298,7 @@ KeyError: 'Spider not found: lianjiaspider'
 https://github.com/HunterChao/Crawler
 </pre>
 
-##BUG 9 [ImportError: No module named scrapy_redis.spiders]
+## BUG 9 [ImportError: No module named scrapy_redis.spiders]
 [相关错误解决](http://blog.csdn.net/pipisorry/article/details/45190851)
 scrapy ImportError: No module named settings
 原因：爬虫根目录下不能有__init__文件，用startproject命令创建的目录是没有这个的，如果手动创建可能会创建相关文件
@@ -309,31 +309,32 @@ scrapy ImportError: No module named settings
 
 对于Python3,如仍报错[ImportError: No module named 'scrapy_redis']，则执行pip3 install scrapy_redis解决。
 
-##BUG 10 [redis.exceptions.ConnectionError: Error 61]
+## BUG 10 [redis.exceptions.ConnectionError: Error 61]
 connecting to localhost:6379. Connection refused.
 Although installing scrapy and redis by: pip install scrapy_redis, 'Error 61' does still happen..
 The reason is that the redis server didn't work normally, refer to:[Check the redis server](http://stackoverflow.com/questions/4670049/rescue-connection-refused-unable-to-connect-to-redis-on-localhost6379)
 So we should install redis by Homebrew[installing-redis-on-mac-os-x](http://jasdeep.ca/2012/05/installing-redis-on-mac-os-x/).
 Then it works! Enjoy!
 
-##BUG 11 [mongodb can't be connected]
+## BUG 11 [mongodb can't be connected]
 [REF](http://blog.csdn.net/quuqu/article/details/52733139)
 
-##BUG 12 [Gradle sync failed: Plugin with id 'com.android.application' not found.]
+## BUG 12 [Gradle sync failed: Plugin with id 'com.android.application' not found.]
 -SOLUTION:[Error:(1, 0) Plugin with id 'com.android.application' not found](http://stackoverflow.com/questions/24795079/error1-0-plugin-with-id-com-android-application-not-found)
 
-##BUG 13 [Gradle sync failed: Minimum supported Gradle version is 3.3. Current version is 2.14.1]
+## BUG 13 [Gradle sync failed: Minimum supported Gradle version is 3.3. Current version is 2.14.1]
  If using the gradle wrapper, try editing the distributionUrl in ...\gradle\wrapper\gradle-wrapper.properties to gradle-3.3-all.zip
 -SOLUTION:[“Minimum supported Gradle version is 2.14.1. Current version is 2.10.” error](http://stackoverflow.com/questions/39164225/minimum-supported-gradle-version-is-2-14-1-current-version-is-2-10-error) 
 
-##BUG 14 [Electron INSTALL & USE]
+## BUG 14 [Electron INSTALL & USE]
 throw new Error('Electron failed to install correctly, please delete node_modules/electron and try installing again')
 Try
-
 npm install electron --verbose
 It should output a progress bar for the download
+----
+Error: connect ETIMEDOUT 52.216.225.24:443
 
-#####TODO LIST
+##### TODO LIST
 ELK/
 <pre>
 2017-03-13 21:48:59 [scrapy.core.engine] INFO: Spider opened
