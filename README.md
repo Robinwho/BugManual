@@ -390,7 +390,15 @@ $ du -m
 --On Windows 10(UNsolved):
 ||npm install --global --production windows-build-tools
 https://www.bountysource.com/issues/34619346-npm-install-save-dev-electron-rebuild-unsuccess
-(npm install -g windows-build-tools -verbose & npm install -g electron-rebuild -verbose)
+(npm install -g windows-build-tools -verbose & npm install -g electron-rebuild -verbose)https://github.com/nodejs/node-gyp
+<pre>$ yarn run rebuild-node-pty -verbose
+× Rebuild Failed
+||An unhandled error occurred inside electron-rebuild
+gyp info it worked if it ends with ok
+gyp info using node-gyp@3.6.1
+gyp info using node@6.10.3 | win32 | x64
+gyp info spawn D:\Anaconda3\envs\py27\python.EXE
+gyp info spawn args [ 'D:\\WORK\\SRC\\hyper\\node_modules\\node-gyp\\gyp\\gyp_main.py',</pre>
 
 ##### TODO LIST
 ELK/
