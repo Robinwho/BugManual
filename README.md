@@ -387,7 +387,10 @@ $ du -m
 </pre>
 
 ## BUG 16 [windows-build-tools ERROR]
+--On Windows 10(UNsolved):
 ||npm install --global --production windows-build-tools
+https://www.bountysource.com/issues/34619346-npm-install-save-dev-electron-rebuild-unsuccess
+(npm install -g windows-build-tools -verbose & npm install -g electron-rebuild -verbose)
 
 ##### TODO LIST
 ELK/
