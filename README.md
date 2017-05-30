@@ -4,7 +4,14 @@
 [最省心的Python版本和第三方库管理——初探Anaconda](https://zhuanlan.zhihu.com/p/25198543)
 * 开发：
 [从0到1，Python Web开发的进击之路](https://zhuanlan.zhihu.com/p/25038203)
+
 [从0到1，Python异步编程的演进之路](https://zhuanlan.zhihu.com/p/25228075)
+* 实例：
+[天猫双12爬虫（福利：266万条商品数据免费下载）](https://zhuanlan.zhihu.com/p/24312829)
+
+[新浪微博爬虫分享（一天可抓取 1300 万条数据）](http://blog.csdn.net/bone_ace/article/details/50903178)
+
+[如何用100行Python代码做出魔性声控游戏“八分音符酱”](https://zhuanlan.zhihu.com/p/25499306)
 
 # BugBook
 Record the major bugs encountered in the projects. So easy to find & summary in the future.
