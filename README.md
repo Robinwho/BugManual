@@ -1,3 +1,11 @@
+# 经典文章参考
+## Python篇：
+>>基础环境：
+[最省心的Python版本和第三方库管理——初探Anaconda](https://zhuanlan.zhihu.com/p/25198543)
+>>开发：
+[从0到1，Python Web开发的进击之路](https://zhuanlan.zhihu.com/p/25038203)
+[从0到1，Python异步编程的演进之路](https://zhuanlan.zhihu.com/p/25228075)
+
 # BugBook
 Record the major bugs encountered in the projects. So easy to find & summary in the future.
 ##BUG 1 [Tensorflow error: Docker on Mac]
