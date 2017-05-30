@@ -1,5 +1,5 @@
-# 经典文章参考
-## Python篇：
+# 一、经典文章参考
+## （一）Python篇：
 * 基础环境：
 
 [最省心的Python版本和第三方库管理——初探Anaconda](https://zhuanlan.zhihu.com/p/25198543)
@@ -16,9 +16,26 @@
 
 [如何用100行Python代码做出魔性声控游戏“八分音符酱”](https://zhuanlan.zhihu.com/p/25499306)
 
-# BugBook
+## （二）AI篇：
+* Deepmind：
+
+[DNC/L2L/..](https://deepmind.com/research/open-source/open-source-code/)
+
+[Github Index](https://github.com/deepmind)
+
+[DNC:A TensorFlow implementation of the Differentiable Neural Computer.](https://github.com/deepmind/dnc)
+
+[sonnet:TensorFlow-based neural network library](https://github.com/deepmind/sonnet)
+
+[lab:A customisable 3D platform for agent-based AI research](https://github.com/deepmind/lab)
+
+[Deepmind org lab page](https://deepmind.com/blog/open-sourcing-deepmind-lab/)
+
+[L2L PAPER:Learning to learn by gradient descent by gradient descent](https://arxiv.org/pdf/1606.04474.pdf)
+
+# 二、BugBook(实操bug解决手册)
 Record the major bugs encountered in the projects. So easy to find & summary in the future.
-##BUG 1 [Tensorflow error: Docker on Mac]
+## BUG 1 [Tensorflow error: Docker on Mac]
 * 1
 Expected behavior
 
@@ -56,15 +73,15 @@ Finally with the help of follow link:
 The correct command:
 >$ sudo docker run -it -p 8888:8888 tensorflow/tensorflow
 
-####Detail
+#### Detail
 https://github.com/docker/for-mac/issues/1145
 
-####TF官方文档中文版
+#### TF官方文档中文版
 [TF basic_usage](http://wiki.jikexueyuan.com/project/tensorflow-zh/get_started/basic_usage.html)
 
-####[Visualizing MNIST: An Exploration of Dimensionality Reduction](http://colah.github.io/posts/2014-10-Visualizing-MNIST/)
+#### [Visualizing MNIST: An Exploration of Dimensionality Reduction](http://colah.github.io/posts/2014-10-Visualizing-MNIST/)
 
-##BUG2 [easy_install command not found]
+## BUG2 [easy_install command not found]
 
 >$ sudo easy_install pip
 >Password:
@@ -72,7 +89,7 @@ https://github.com/docker/for-mac/issues/1145
 
 Following this link[why-is-python-easy-install-not-working-on-my-mac](http://stackoverflow.com/questions/6012246/why-is-python-easy-install-not-working-on-my-mac), it can't work.
 
-####Detail
+#### Detail
 >$ sudo find . -name "easy_install"
 >./usr/local/Cellar/python/2.7.12_2/Frameworks/Python.framework/Versions/2.7/bin/easy_install
 
@@ -91,7 +108,7 @@ Using /usr/local/lib/python2.7/site-packages/pip-6.0.8-py2.7.egg
 Processing dependencies for pip
 Finished processing dependencies for pip
 
-####Exa: [python2.7 & 3.5 path configuration]
+#### Exa: [python2.7 & 3.5 path configuration]
 vim .bash_profile
 
 <code>
@@ -111,31 +128,31 @@ vim .bash_profile
 
 -------------------------------
 
-##BUG3 [Using Sqlite3]
+## BUG3 [Using Sqlite3]
 e.g. On Mac:http://www.cnblogs.com/xingfuzzhd/archive/2013/11/04/3407166.html
 ###useful command:
 >sqlite> select * from sqlite_master where type="table";
 
 
-##BUG4 [Input URL: SyntaxError: invalid syntax]
+## BUG4 [Input URL: SyntaxError: invalid syntax]
 Using 'http://xxxx.xxx.xxx' instead of http://xxxx.xxx.xxx. See the difference?
 
 Or refer to this:[command-line-input-causes-syntaxerror](http://stackoverflow.com/questions/2589309/command-line-input-causes-syntaxerror)
 
-##BUG5 [TypeError: 'encoding' is an invalid keyword argument for this function]
+## BUG5 [TypeError: 'encoding' is an invalid keyword argument for this function]
 In Python 2, the open() function takes no encoding argument. The third argument is the buffering option instead.
 You appear to be confused with the Python 3 version. If so use io.open() instead:
 >import io
 >with io.open("file1.txt", "a", encoding="utf-8-sig") as f:
 In Python 3, the io.open() function replaced the version from Python 2.
 
-##BUG6 [bs4.FeatureNotFound]
+## BUG6 [bs4.FeatureNotFound]
 bs4.FeatureNotFound: Couldn't find a tree builder with the features you requested: lxml. Do you need to install a parser library?
 
-####REASON:
+#### REASON:
 You'll notice that in the BS4 documentation page above, they point out that by default BS4 will use the Python built-in HTML parser. Assuming you are in OSX, the Apple-bundled version of Python is 2.7.2 which is not lenient for character formatting.
 
-####SOLUTION:
+#### SOLUTION:
 >sudo pip install lxml
 If there is:
 ||In file included from src/lxml/lxml.etree.c:515:
@@ -168,7 +185,7 @@ d. Get it from http://aka.ms/vcpython27
 Command "python setup.py egg_info" failed with error code 1 in c:\users\hp430\ap
 pdata\local\temp\pip-build-f17bsa\cffi
 
-####SOLUTION1:
+#### SOLUTION1:
 http://aka.ms/vcpython27
 Then
 >pip install scrapy
@@ -178,7 +195,7 @@ error: command 'C:\\Users\\HP430\\AppData\\Local\\Programs\\Common\\Microsoft\\V
 Command "c:\python27\python.exe -c "import setuptools, tokenize;__file__='c:\\users\\hp430\\appdata\\local\\temp\\pip-build-dugrv2\\cryptography\\setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record c:\users\hp430\appdata\local\temp\pip-8ihq2x-record\install-record.txt --single-version-externally-managed --compile" failed with error code 1 in c:\users\hp430\appdata\local\temp\pip-build-dugrv2\cryptography
 </code></pre>
 
-####SOLUTION2:
+#### SOLUTION2:
 [How to install scrapy](https://cryptography.io/en/latest/installation/#on-windows)
 
 >For Python3:
@@ -194,7 +211,7 @@ Command "c:\python27\python.exe -c "import setuptools, tokenize;__file__='c:\\us
 
 Install "pywin32-220.win32-py2.7.exe" on Win7:
 >>python version 2.7 required which was not found in the registry
-###SOLUTION1:
+### SOLUTION1:
 
 >>python register.py
 
@@ -265,7 +282,7 @@ You are using pip version 7.1.2, however version 9.0.1 is available.
 You should consider upgrading via the 'python -m pip install --upgrade pip' comm
 and.
 
-###REF LINKS
+### REF LINKS
 * 1
 [安装python爬虫scrapy踩过的那些坑和编程外的思考](http://www.cnblogs.com/rwxwsblog/p/4557123.html)
 * 2
