@@ -400,6 +400,12 @@ gyp info using node@6.10.3 | win32 | x64
 gyp info spawn D:\Anaconda3\envs\py27\python.EXE
 gyp info spawn args [ 'D:\\WORK\\SRC\\hyper\\node_modules\\node-gyp\\gyp\\gyp_main.py',</pre>
 
+## BUG 17 [Robomongo 意外退出]
+[MACOS brew install](https://unix.stackexchange.com/questions/155715/sudo-service-command-not-found-when-installing-mongodb)
+brew services start mongod
+brew services stop mongodb
+
+
 ##### TODO LIST
 ELK/
 <pre>
