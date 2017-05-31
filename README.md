@@ -33,6 +33,11 @@
 
 [L2L PAPER:Learning to learn by gradient descent by gradient descent](https://arxiv.org/pdf/1606.04474.pdf)
 
+* 深度学习：
+
+[深度学习入门](https://www.zhihu.com/question/26006703)
+
+
 # 二、BugBook(实操bug解决手册)
 Record the major bugs encountered in the projects. So easy to find & summary in the future.
 ## BUG 1 [Tensorflow error: Docker on Mac]
