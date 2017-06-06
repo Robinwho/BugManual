@@ -86,6 +86,8 @@ https://github.com/docker/for-mac/issues/1145
 
 #### [Visualizing MNIST: An Exploration of Dimensionality Reduction](http://colah.github.io/posts/2014-10-Visualizing-MNIST/)
 
+*** 使用conda安装TF：https://github.com/tensorflow/tensorflow/issues/647
+
 ## BUG2 [easy_install command not found]
 
 >$ sudo easy_install pip
