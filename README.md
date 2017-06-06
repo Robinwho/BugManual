@@ -37,6 +37,8 @@
 
 [深度学习入门](https://www.zhihu.com/question/26006703)
 
+* TensorFlow:
+[Github Code](https://github.com/tensorflow/tensorflow)
 
 # 二、BugBook(实操bug解决手册)
 Record the major bugs encountered in the projects. So easy to find & summary in the future.
